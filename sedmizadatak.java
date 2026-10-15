@@ -1,23 +1,35 @@
-package prviCas;
+package PetaNedelja;
+
+
+import java.util.Scanner; 
 
 public class sedmizadatak {
-	public static void main (String [] args) { 
+	
+	public static void main(String[] args) {
+		Scanner sc = new  Scanner (System.in);
+		System.out.println("unesi recenicu");
 		
-		double x1=1;
-		double y1=2;
+		String rijec = sc.nextLine();
+		String[] rijeci = rijec.split(" ");
 		
-		double x2=5;
-		double y2=3;
-		
-		double x3=(x1+x2)/2;
-		double y3=(y1+y2)/2;
-		
-	    double udaljenostB = Math.sqrt((x3-x1)*(x3-x1)+(y3-y1)*(y3-y1));
-	    double udaljenostD= Math.sqrt((x3-x2)*(x3-x2)+(y3-y2)*(y3-y2));
-	    
-		System.out.println("Udaljenost izmedju studenata i sredine su: " + udaljenostD + "i:"+udaljenostB);
-				
+		StringBuilder novaRijec  = new StringBuilder();
+		 for (int i =0; i<rijeci.length;i++) {
+	    	  String rijec1 = rijeci[i];
+	    	 
+	    	  
+		    	  
+	 StringBuilder obrnuto = new StringBuilder(rijec1).reverse(); 
+		            novaRijec.append(obrnuto); 
+		            
+		            if (i < rijeci.length - 1) {
+		            	novaRijec.append(" "); 
+		        } 
+		        System.out.println(novaRijec.toString());  
+		 	    
+	sc.close();
 		
 		
 	}
+
+}
 }
