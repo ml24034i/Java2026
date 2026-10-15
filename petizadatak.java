@@ -1,17 +1,16 @@
-package prviCas;
+package PetaNedelja;
 
 public class petizadatak {
-	public static void main (String [] args) {  
-		
-		int broj = 1234;
-		int x = broj%10;
-		int y = (broj/10)%10;
-		int z = (broj/100)%100;
-		int q = broj/1000;
-		
-		int zbir=x+y+z+q;
-		int kvadrat = zbir*zbir;
-		System.out.println("kvadrat zbira cifara broja je:"+ kvadrat);
-			}
 
+	public static void main(String[] args) {
+		
+		String test1 = "ana";
+		String test2 = "Milovana";
+		
+		if (test2.contains(test1.trim())) {
+			System.out.println("string 2 jeste u stringu 1");
+			
+		}
+		
+	}
 }
